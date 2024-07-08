@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "Danger Weapon in the world ?",
+    question: "PowerFull Weapon in the world ?",
     answers : [
       {text : "Love", correct:true},
       {text : "Bomb", correct:false},
@@ -12,7 +12,7 @@ const questions = [
     question: "Peace full place in the world ?",
     answers : [
       {text : "Thomb ", correct:true},
-      {text : "Devotional", correct:false},
+      {text : "Devotional", correct:true},
       {text : "Alone", correct:true},
       {text : "None of these", correct:false},
     ]
@@ -33,6 +33,13 @@ const questions = [
       {text : "Struggles", correct:false},
       {text : "Troubles", correct:false},
       {text : "All Of These", correct:true},
+    ]
+  },
+  {
+    question: "Is EyeContact is Necessary or Not ?",
+    answers : [
+      {text : "Yes", correct:true},
+      {text : "No", correct:false},
     ]
   },
   
@@ -84,7 +91,7 @@ function selectAnswer(e){
   const isCorrect = selectedBtn.dataset.correct === "true";
   if(isCorrect){
     // selectedBtn.classList.add("true");
-    selectedBtn.style.backgroundColor = "blue";
+    selectedBtn.style.backgroundColor = "black";
     selectedBtn.style.color = "white";
     score++;
   }else{
